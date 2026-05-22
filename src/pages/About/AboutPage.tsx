@@ -1,40 +1,25 @@
+import { useLanguage } from "../../context/LanguageContext";
+
 export function AboutPage() {
+  const { t } = useLanguage();
+
   return (
     <section className="page">
-      <p className="eyebrow">about.md</p>
+      <p className="eyebrow">{t.about.fileName}</p>
 
-      <h1>About Me</h1>
+      <h1>{t.about.title}</h1>
 
-      <p className="page-description">
-        I am a Full-Stack Developer focused on building scalable web and mobile
-        applications, REST APIs, administrative dashboards, and reliable backend
-        services.
-      </p>
+      <p className="page-description">{t.about.description}</p>
+
+      <p className="page-description">{t.about.secondDescription}</p>
 
       <div className="grid-3">
-        <article className="info-card">
-          <h3>Mobile Applications</h3>
-          <p>
-            React Native apps with geolocation, biometric authentication, and
-            push notifications.
-          </p>
-        </article>
-
-        <article className="info-card">
-          <h3>Backend Systems</h3>
-          <p>
-            REST APIs with Node.js, Express, TypeScript, authentication, and
-            database optimization.
-          </p>
-        </article>
-
-        <article className="info-card">
-          <h3>Production Deployments</h3>
-          <p>
-            Linux-based deployments with Nginx, PM2, and reliable server
-            environments.
-          </p>
-        </article>
+        {t.about.cards.map((card) => (
+          <article key={card.title} className="info-card">
+            <h3>{card.title}</h3>
+            <p>{card.description}</p>
+          </article>
+        ))}
       </div>
     </section>
   );

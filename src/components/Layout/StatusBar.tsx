@@ -3,6 +3,7 @@ import {
   VscCode,
   VscSourceControl,
 } from "react-icons/vsc";
+import { LanguageToggle } from "./LanguageToggle";
 
 export function StatusBar() {
   return (
@@ -29,6 +30,8 @@ export function StatusBar() {
           <VscCode />
           UTF-8
         </span>
+
+        <LanguageToggle />
       </div>
     </footer>
   );

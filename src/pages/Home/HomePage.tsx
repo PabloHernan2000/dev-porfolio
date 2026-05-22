@@ -1,6 +1,15 @@
+import { useState } from "react";
 import { Link } from "react-router";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function HomePage() {
+  const { t } = useLanguage();
+  const [showCvOptions, setShowCvOptions] = useState(false);
+
+  const toggleCvOptions = () => {
+    setShowCvOptions((currentValue) => !currentValue);
+  };
+
   return (
     <section className="page page-home">
       <div className="code-window">
@@ -14,73 +23,88 @@ export function HomePage() {
         <div className="code-line">
           <span className="line-number">2</span>
           <span className="token-property">name</span>:{" "}
-          <span className="token-string">"Pablo Hernán Muñoz García"</span>,
+          <span className="token-string">"{t.home.name}"</span>,
         </div>
 
         <div className="code-line">
           <span className="line-number">3</span>
           <span className="token-property">role</span>:{" "}
-          <span className="token-string">"Full-Stack Developer"</span>,
+          <span className="token-string">"{t.home.role}"</span>,
         </div>
 
         <div className="code-line">
           <span className="line-number">4</span>
           <span className="token-property">location</span>:{" "}
-          <span className="token-string">"Pachuca de Soto, Mexico"</span>,
-        </div>
-
-        <div className="code-line">
-          <span className="line-number">5</span>
-          <span className="token-property">stack</span>:{" "}
-          <span className="token-array">
-            ["React", "React Native", "Node.js", "APIs REST", "TypeScript", "PostgreSQL"]
-          </span>
+          <span className="token-string">"{t.home.location}"</span>,
         </div>
 
         <div className="code-line">
           <span className="line-number">6</span>
+          <span className="token-property">stack</span>:{" "}
+          <span className="token-array">
+            [{t.home.stack.slice(0, 5).map((item) => `"${item}"`).join(", ")}]
+          </span>
+        </div>
+
+        <div className="code-line">
+          <span className="line-number">7</span>
           <span>{"}"}</span>;
         </div>
       </div>
 
       <div className="hero-card">
-        <p className="eyebrow">pablo.profile.ts</p>
+        <p className="eyebrow">{t.home.fileName}</p>
 
-        <h1>Pablo Hernán Muñoz García</h1>
+        <h1>{t.home.name}</h1>
 
-        <h2>Full-Stack Developer</h2>
+        <h2>{t.home.role}</h2>
 
-        <p className="hero-description">
-          Building scalable web and mobile applications with React, React Native,
-          Node.js, TypeScript, PostgreSQL, and Linux-based deployments.
-        </p>
+        <p className="hero-description">{t.home.subtitle}</p>
 
         <div className="hero-actions">
           <Link to="/projects" className="button button-primary">
-            View Projects
+            {t.common.viewProjects}
           </Link>
 
-          <a href="/pablo-munoz-cv.pdf" className="button button-secondary">
-            Download Resume
-          </a>
+          <div className="cv-dropdown">
+            <button
+              type="button"
+              className="button button-secondary"
+              onClick={toggleCvOptions}
+              aria-expanded={showCvOptions}
+              aria-haspopup="true"
+            >
+              {t.common.downloadResume}
+            </button>
+
+            {showCvOptions && (
+              <div className="cv-dropdown-menu">
+                <a
+                  href="/documents/cv_pablo_munoz_es.pdf"
+                  download="cv-pablo-munoz-es.pdf"
+                  className="cv-dropdown-item"
+                >
+                  CV Español
+                </a>
+
+                <a
+                  href="/documents/cv-pablo-munoz_en.pdf"
+                  download="cv-pablo-munoz-en.pdf"
+                  className="cv-dropdown-item"
+                >
+                  CV English
+                </a>
+              </div>
+            )}
+          </div>
 
           <Link to="/contact" className="button button-ghost">
-            Contact Me
+            {t.common.contactMe}
           </Link>
         </div>
 
         <div className="tech-list">
-          {[
-            "React",
-            "React Native",
-            "Node.js",
-            "TypeScript",
-            "PostgreSQL",
-            "SQL Server",
-            "Linux",
-            "Nginx",
-            "PM2",
-          ].map((tech) => (
+          {t.home.stack.map((tech) => (
             <span key={tech} className="tech-badge">
               {tech}
             </span>

@@ -1,9 +1,12 @@
 import { NavLink } from "react-router";
 import { VscChevronDown, VscFolderOpened } from "react-icons/vsc";
 
+import { useLanguage } from "../../context/LanguageContext";
 import { navigationItems } from "../../data/navigation";
 
 export function FileExplorer() {
+  const { t } = useLanguage();
+
   return (
     <aside className="file-explorer">
       <header className="file-explorer__header">
@@ -14,12 +17,13 @@ export function FileExplorer() {
         <div className="file-explorer__folder">
           <VscChevronDown />
           <VscFolderOpened />
-          <span>Pablo</span>
+          <span>pablo-portfolio</span>
         </div>
 
         <nav className="file-explorer__nav" aria-label="Portfolio files">
           {navigationItems.map((item) => {
             const Icon = item.icon;
+            const fileName = t.navigation[item.labelKey];
 
             return (
               <NavLink
@@ -33,7 +37,7 @@ export function FileExplorer() {
                 }
               >
                 <Icon />
-                <span>{item.fileName}</span>
+                <span>{fileName}</span>
               </NavLink>
             );
           })}

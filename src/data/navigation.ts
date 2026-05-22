@@ -6,53 +6,46 @@ import {
   VscJson,
   VscMail,
   VscMortarBoard,
-  VscServerProcess,
+  VscSourceControl,
 } from "react-icons/vsc";
 
 export const navigationItems = [
   {
-    label: "Profile",
-    fileName: "pablo.profile.ts",
+    labelKey: "profile",
     path: "/",
     icon: VscAccount,
   },
   {
-    label: "About",
-    fileName: "about.md",
+    labelKey: "about",
     path: "/about",
     icon: VscFiles,
   },
   {
-    label: "Skills",
-    fileName: "skills.config.ts",
+    labelKey: "skills",
     path: "/skills",
     icon: VscCode,
   },
   {
-    label: "Experience",
-    fileName: "experience.json",
+    labelKey: "experience",
     path: "/experience",
     icon: VscJson,
   },
   {
-    label: "Projects",
-    fileName: "projects.md",
+    labelKey: "projects",
     path: "/projects",
     icon: VscFolderLibrary,
   },
   {
-    label: "Education",
-    fileName: "education.md",
+    labelKey: "education",
     path: "/education",
     icon: VscMortarBoard,
   },
   {
-    label: "Contact",
-    fileName: "contact.sh",
+    labelKey: "contact",
     path: "/contact",
     icon: VscMail,
   },
-];
+] as const;
 
 export const activityItems = [
   {
@@ -61,7 +54,7 @@ export const activityItems = [
   },
   {
     label: "Source Control",
-    icon: VscServerProcess,
+    icon: VscSourceControl,
   },
   {
     label: "Code",
@@ -71,4 +64,4 @@ export const activityItems = [
     label: "Account",
     icon: VscAccount,
   },
-];
+] as const;

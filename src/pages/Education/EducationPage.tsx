@@ -1,22 +1,33 @@
+import { useLanguage } from "../../context/LanguageContext";
+
 export function EducationPage() {
+  const { t, language } = useLanguage();
+
   return (
     <section className="page">
-      <p className="eyebrow">education.md</p>
+      <p className="eyebrow">{t.education.fileName}</p>
 
-      <h1>Education</h1>
+      <h1>{t.education.title}</h1>
+
+      <p className="page-description">{t.education.description}</p>
 
       <div className="timeline">
-        <article className="timeline-card">
-          <span className="timeline-date">December 2022</span>
-          <h3>Universidad Autónoma del Estado de Hidalgo</h3>
-          <p>Bachelor's Degree in Computer Science</p>
-        </article>
+        {t.education.items.map((item) => (
+          <article key={item.institution} className="timeline-card">
+            <span className="timeline-date">{item.period}</span>
 
-        <article className="timeline-card">
-          <span className="timeline-date">February 2026 — Present</span>
-          <h3>UNIR México</h3>
-          <p>Master's Degree in Cybersecurity</p>
-        </article>
+            <h3>{item.institution}</h3>
+
+            <p className="timeline-role">{item.degree}</p>
+
+            <p className="timeline-location">{item.location}</p>
+          </article>
+        ))}
+      </div>
+
+      <div className="info-card education-note">
+        <h3>{language === 'en' ? 'Cybersecurity focus' : 'Enfoque en la ciberseguridad'}</h3>
+        <p>{t.education.note}</p>
       </div>
     </section>
   );
