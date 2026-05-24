@@ -18,3 +18,11 @@ export type Project = {
     confidentialityNote?: string;
     impact?: string | string[];
 };
+
+export type ProjectGroup = {
+    company: string;
+    period?: string;
+    location?: string;
+    description?: string;
+    projects: Project[];
+};
