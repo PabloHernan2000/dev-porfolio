@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { ReactNode } from "react";
 
 import { ActivityBar } from "./ActivityBar";
@@ -11,11 +12,30 @@ type AppLayoutProps = {
 };
 
 export function AppLayout({ children }: AppLayoutProps) {
+  const [isExplorerOpen, setIsExplorerOpen] = useState(false);
+
+  const toggleExplorer = () => {
+    setIsExplorerOpen((currentValue) => !currentValue);
+  };
+
+  const closeExplorer = () => {
+    setIsExplorerOpen(false);
+  };
+
   return (
     <div className="app-shell">
-      <ActivityBar />
+      <ActivityBar onToggleExplorer={toggleExplorer} />
 
-      <FileExplorer />
+      <FileExplorer isOpen={isExplorerOpen} onClose={closeExplorer} />
+
+      {isExplorerOpen && (
+        <button
+          className="mobile-overlay"
+          type="button"
+          aria-label="Close file explorer"
+          onClick={closeExplorer}
+        />
+      )}
 
       <section className="workspace">
         <EditorTabs />

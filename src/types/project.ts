@@ -16,4 +16,5 @@ export type Project = {
     caseStudyUrl?: string | null;
     storeUrls?: ProjectStoreUrls | null;
     confidentialityNote?: string;
+    impact?: string | string[];
 };

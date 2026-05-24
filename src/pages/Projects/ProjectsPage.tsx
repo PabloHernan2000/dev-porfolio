@@ -60,19 +60,19 @@ export function ProjectsPage() {
               className={`project-card ${index === 0 ? "project-card--featured" : ""
                 }`}
             >
-              <span className="project-card__index">
-                {String(index + 1).padStart(2, "0")}
-              </span>
+              <header className="project-card__header">
+                <span className="project-card__index">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
 
-              <div className="project-card__header">
                 <span className="project-card__category">
                   {project.category}
                 </span>
-                <br />
-                <span className="project-card__role">{project.role}</span>
-              </div>
+              </header>
 
               <h3>{project.title}</h3>
+
+              <p className="project-card__role">{project.role}</p>
 
               <p>{project.description}</p>
 
@@ -83,17 +83,33 @@ export function ProjectsPage() {
                 </div>
               )}
 
+              {project.impact && (
+                <div className="project-card__impact">
+                  <strong>{t.common.impact}:</strong>
+
+                  {Array.isArray(project.impact) ? (
+                    <ul>
+                      {project.impact.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <span>{project.impact}</span>
+                  )}
+                </div>
+              )}
+
               {project.responsibilities &&
                 project.responsibilities.length > 0 && (
-                  <div className="project-card__responsibilities">
-                    <strong>{t.common.responsibilities}:</strong>
+                  <details className="project-card__details">
+                    <summary>{t.common.responsibilities}</summary>
 
                     <ul>
                       {project.responsibilities.map((responsibility) => (
                         <li key={responsibility}>{responsibility}</li>
                       ))}
                     </ul>
-                  </div>
+                  </details>
                 )}
 
               <div className="tech-list">
@@ -150,7 +166,7 @@ export function ProjectsPage() {
                       href={androidUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="button button-ghost"
+                      className="button button-store"
                     >
                       Google Play
                     </a>
@@ -161,7 +177,7 @@ export function ProjectsPage() {
                       href={iosUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="button button-ghost"
+                      className="button button-store"
                     >
                       App Store
                     </a>

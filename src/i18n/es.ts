@@ -23,6 +23,7 @@ export const es = {
         linkedin: "LinkedIn",
         problemSolved: "Problema resuelto",
         responsibilities: "Responsabilidades",
+        impact: "Impacto",
     },
 
     home: {
@@ -158,89 +159,83 @@ export const es = {
         items: [
             {
                 title: "Aplicación móvil Tuzobús",
-                category: "Gobierno",
+                category: "Gobierno / Movilidad",
                 role: "Desarrollador Full-Stack",
                 description:
-                    "Aplicación móvil ",
+                    "Modernización y relanzamiento de la app móvil Tuzobús, incluyendo nuevo diseño institucional, corrección de funcionalidades, integración de APIs REST, base de datos y nuevas características móviles.",
                 problemSolved:
-                    "Digitalización de procesos internos que antes se gestionaban de forma manual, mejorando el control, la trazabilidad y el acceso a la información.",
+                    "La app llevaba años sin actualizarse, no contaba con base de datos propia, tenía funcionalidades obsoletas y había sido retirada de Google Play y App Store.",
+                impact:
+                    "Se recuperó su disponibilidad en tiendas, se mejoró la experiencia móvil y se dio soporte a aproximadamente 77 mil usuarios registrados.",
                 responsibilities: [
-                    "Desarrollo de interfaces administrativas con React.",
-                    "Integración con APIs REST.",
-                    "Implementación de autenticación y control de acceso.",
-                    "Optimización de consultas a base de datos.",
-                    "Apoyo en despliegues sobre servidores Linux.",
+                    "Desarrollo de interfaces móviles con React Native.",
+                    "Rediseño visual alineado a la nueva imagen institucional.",
+                    "Desarrollo e integración de APIs REST.",
+                    "Diseño e implementación de base de datos.",
+                    "Corrección de funcionalidades existentes.",
+                    "Implementación de nuevas funcionalidades.",
+                    "Integración de mapas y servicios de geolocalización.",
+                    "Configuración de servicios Firebase para funcionalidades móviles.",
+                    "Soporte al proceso de publicación en Google Play y App Store.",
                 ],
                 stack: [
                     "React Native",
                     "TypeScript",
                     "Node.js",
+                    "PostgreSQL",
                     "Firebase",
-                    "Maps"
+                    "Maps",
+                    "Geolocalización",
                 ],
                 repositoryUrl: null,
                 demoUrl: null,
                 caseStudyUrl: null,
                 storeUrls: {
-                    android: "https://play.google.com/store/apps/details?id=com.tuzobus&pcampaignid=web_share",
-                    ios: "https://apps.apple.com/mx/app/tuzob%C3%BAs/id1473326651?l=en-GBTuzobús"
+                    android:
+                        "https://play.google.com/store/apps/details?id=com.tuzobus&pcampaignid=web_share",
+                    ios: "https://apps.apple.com/mx/app/tuzob%C3%BAs/id1473326651?l=en-GB",
                 },
                 confidentialityNote:
                     "Repositorio no disponible por restricciones de propiedad y confidencialidad institucional.",
             },
-            /* {
-                title: "Aplicación móvil de servicios ciudadanos",
-                category: "Aplicación móvil",
-                role: "Desarrollador Mobile",
+            {
+                title: "App Parque Cultural Hidalguense",
+                category: "Gobierno / Reservaciones",
+                role: "Desarrollador Full-Stack",
                 description:
-                    "Aplicación móvil desarrollada para consulta de información, autenticación de usuarios, notificaciones push y conexión con servicios backend.",
+                    "Aplicación móvil para consultar disponibilidad, solicitar reservaciones, cancelar reservas y calificar servicios en los espacios del Parque Cultural Hidalguense.",
                 problemSolved:
-                    "Facilitó el acceso de usuarios a servicios digitales desde dispositivos móviles.",
+                    "El parque contaba con un sistema web de reservaciones, pero no tenía una experiencia móvil dedicada para los usuarios.",
                 responsibilities: [
-                    "Desarrollo de pantallas con React Native.",
-                    "Integración con servicios backend mediante APIs REST.",
-                    "Configuración de notificaciones push.",
-                    "Implementación de autenticación y manejo de sesión.",
+                    "Desarrollo de interfaces móviles con React Native.",
+                    "Integración con sistema web y servicios backend existentes.",
+                    "Implementación de autenticación biométrica.",
+                    "Desarrollo del flujo de solicitud de reservaciones.",
+                    "Consulta de disponibilidad de espacios y actividades.",
+                    "Implementación de cancelación de reservaciones.",
+                    "Implementación de calificación del servicio.",
+                    "Integración con APIs REST.",
+                    "Validación de flujos de usuario y mejora de experiencia móvil.",
                 ],
+                impact:
+                    "Se mejoró el acceso móvil al sistema de reservaciones y la gestión de actividades como fútbol, ajedrez, go karts, basketball y pádel.",
                 stack: [
                     "React Native",
                     "TypeScript",
-                    "Firebase",
                     "APIs REST",
-                    "Push Notifications",
+                    "PostgreSQL",
+                    "Autenticación biométrica",
                 ],
                 repositoryUrl: null,
                 demoUrl: null,
                 caseStudyUrl: null,
                 storeUrls: {
-                    android: "https://play.google.com/store/apps/details?id=tu.app",
-                    ios: "https://apps.apple.com/app/tu-app/id000000000",
+                    android: "https://play.google.com/store/apps/details?id=com.reservacionesbengurion&pcampaignid=web_share",
+                    ios: "https://apps.apple.com/mx/app/parque-cultural-hidalguense/id6746427833",
                 },
                 confidentialityNote:
-                    "Repositorio privado. Se comparten únicamente enlaces públicos a tiendas oficiales.",
+                    "Repositorio no disponible por restricciones de propiedad y confidencialidad institucional.",
             },
-            {
-                title: "Dashboard administrativo",
-                category: "Web",
-                role: "Desarrollador Frontend",
-                description:
-                    "Dashboard web para visualización de datos, administración de registros, filtros avanzados y consumo de APIs.",
-                problemSolved:
-                    "Centralizó información operativa en una interfaz clara y fácil de usar.",
-                responsibilities: [
-                    "Construcción de componentes reutilizables con React.",
-                    "Consumo de APIs REST.",
-                    "Manejo de estados, filtros y formularios.",
-                    "Mejoras de experiencia de usuario.",
-                ],
-                stack: ["React", "TypeScript", "Tailwind CSS", "APIs REST"],
-                repositoryUrl: null,
-                demoUrl: null,
-                caseStudyUrl: null,
-                storeUrls: null,
-                confidentialityNote:
-                    "Proyecto desarrollado para cliente privado. El código fuente no puede compartirse.",
-            }, */
         ] satisfies Project[],
     },
 

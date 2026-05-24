@@ -1,16 +1,32 @@
 import { NavLink } from "react-router";
-import { VscChevronDown, VscFolderOpened } from "react-icons/vsc";
+import { VscChevronDown, VscClose, VscFolderOpened } from "react-icons/vsc";
 
 import { useLanguage } from "../../context/LanguageContext";
 import { navigationItems } from "../../data/navigation";
 
-export function FileExplorer() {
+type FileExplorerProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+export function FileExplorer({ isOpen, onClose }: FileExplorerProps) {
   const { t } = useLanguage();
 
   return (
-    <aside className="file-explorer">
+    <aside
+      className={`file-explorer ${isOpen ? "file-explorer--open" : ""}`}
+    >
       <header className="file-explorer__header">
         <span>EXPLORER</span>
+
+        <button
+          className="file-explorer__close"
+          type="button"
+          aria-label="Close file explorer"
+          onClick={onClose}
+        >
+          <VscClose />
+        </button>
       </header>
 
       <section className="file-explorer__workspace">
@@ -30,6 +46,7 @@ export function FileExplorer() {
                 key={item.path}
                 to={item.path}
                 end={item.path === "/"}
+                onClick={onClose}
                 className={({ isActive }) =>
                   isActive
                     ? "file-explorer__link file-explorer__link--active"
