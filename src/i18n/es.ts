@@ -24,6 +24,7 @@ export const es = {
         problemSolved: "Problema resuelto",
         responsibilities: "Responsabilidades",
         impact: "Impacto",
+        institutions: "instituciones"
     },
 
     home: {
@@ -143,7 +144,7 @@ export const es = {
                 location: "Mineral de la Reforma, Hidalgo",
                 highlights: [
                     "Sistema de encuestas académicas.",
-                    "Automatización de recopilación y análisis de datos.",
+                    "Automatización de recopilación.",
                     "PHP, SQL Server, Bootstrap y jQuery.",
                 ],
                 stack: ["PHP", "SQL Server", "Bootstrap", "jQuery"],
@@ -246,6 +247,45 @@ export const es = {
                         confidentialityNote:
                             "Repositorio no disponible por restricciones de propiedad y confidencialidad institucional.",
                     },
+                    {
+                        title: "Desarrollo de sistemas internos",
+                        category: "Gobierno / Sistemas internos",
+                        role: "Desarrollador Full-Stack",
+                        description:
+                            "Desarrollo y mantenimiento de sistemas internos para apoyar procesos administrativos, operativos y de seguimiento institucional dentro del Gobierno del Estado de Hidalgo.",
+                        problemSolved:
+                            "Diversas áreas requerían herramientas digitales internas para mejorar el control de información, reducir procesos manuales y centralizar la operación de servicios administrativos.",
+                        impact:
+                            "Se apoyó la digitalización de procesos internos mediante sistemas web y servicios backend privados, mejorando la organización, consulta y seguimiento de información institucional.",
+                        responsibilities: [
+                            "Desarrollo de interfaces web administrativas.",
+                            "Desarrollo e integración de APIs REST.",
+                            "Diseño y mantenimiento de bases de datos.",
+                            "Implementación de módulos internos para captura, consulta y administración de información.",
+                            "Optimización de consultas y procesos backend.",
+                            "Despliegue y administración de servicios en entornos Linux.",
+                            "Mantenimiento correctivo y evolutivo de sistemas internos.",
+                            "Colaboración con áreas internas para levantamiento de requerimientos y validación de funcionalidades.",
+                        ],
+                        stack: [
+                            "React",
+                            "TypeScript",
+                            "Node.js",
+                            "Express",
+                            "PostgreSQL",
+                            "SQL Server",
+                            "Linux",
+                            "Nginx",
+                            "PM2",
+                            "APIs REST",
+                        ],
+                        repositoryUrl: null,
+                        demoUrl: null,
+                        caseStudyUrl: null,
+                        storeUrls: null,
+                        confidentialityNote:
+                            "Proyecto interno privado. El código fuente, documentación técnica, capturas y acceso al sistema no pueden compartirse por restricciones de confidencialidad institucional.",
+                    }
                 ],
             },
             {

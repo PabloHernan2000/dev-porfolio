@@ -80,16 +80,16 @@ export function HomePage() {
             {showCvOptions && (
               <div className="cv-dropdown-menu">
                 <a
-                  href="/documents/cv_pablo_munoz_es.pdf"
-                  download="cv-pablo-munoz-es.pdf"
+                  href="/documents/PabloHernanMunozGarcia_cv_2026_es.pdf"
+                  download="PabloHernanMunozGarcia_cv_2026_es.pdf"
                   className="cv-dropdown-item"
                 >
                   CV Español
                 </a>
 
                 <a
-                  href="/documents/cv-pablo-munoz_en.pdf"
-                  download="cv-pablo-munoz-en.pdf"
+                  href="/documents/PabloHernanMunozGarcia_cv_2026_en.pdf"
+                  download="PabloHernanMunozGarcia_cv_2026_en.pdf"
                   className="cv-dropdown-item"
                 >
                   CV English

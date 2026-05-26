@@ -12,18 +12,19 @@ export const en = {
     },
 
     common: {
-        viewProjects: "View Projects",
-        downloadResume: "Download Resume",
-        contactMe: "Contact Me",
-        viewCaseStudy: "View Case Study",
+        viewProjects: "View projects",
+        downloadResume: "Download resume",
+        contactMe: "Contact me",
+        viewCaseStudy: "View case study",
         github: "GitHub",
-        liveDemo: "Live Demo",
-        sendEmail: "Send Email",
-        copyEmail: "Copy Email",
+        liveDemo: "Live demo",
+        sendEmail: "Send email",
+        copyEmail: "Copy email",
         linkedin: "LinkedIn",
         problemSolved: "Problem solved",
         responsibilities: "Responsibilities",
         impact: "Impact",
+        institutions: "institutions"
     },
 
     home: {
@@ -32,7 +33,7 @@ export const en = {
         role: "Full-Stack Developer",
         location: "Pachuca de Soto, Mexico",
         subtitle:
-            "Building scalable web and mobile applications with React, React Native, Node.js, TypeScript, PostgreSQL, and Linux-based deployments.",
+            "Experience building scalable web and mobile applications with React, React Native, Node.js, TypeScript, PostgreSQL, and Linux-based deployments.",
         stack: [
             "React",
             "React Native",
@@ -48,39 +49,44 @@ export const en = {
 
     about: {
         fileName: "about.md",
-        title: "About Me",
+        title: "About me",
         description:
-            "I am a Full-Stack Developer focused on building scalable web and mobile applications, REST APIs, administrative dashboards, and reliable backend services.",
+            "I am a Full-Stack Developer focused on building web and mobile applications, REST APIs, administrative dashboards, and scalable backend services. I work with React to build dynamic, reusable, and optimized interfaces while taking care of both user experience and code quality.",
         secondDescription:
-            "",
+            "I also develop mobile applications with React Native, integrate backend services with Node.js, Express, and TypeScript, and deploy production applications on Linux environments using Nginx and PM2.",
         cards: [
             {
-                title: "Mobile Applications",
+                title: "Web applications with React",
                 description:
-                    "React Native apps with geolocation, biometric authentication, and push notifications.",
+                    "Modern interfaces, administrative dashboards, reusable components, REST API consumption, and optimized user experiences.",
             },
             {
-                title: "Backend Systems",
+                title: "Mobile applications",
                 description:
-                    "REST APIs with Node.js, Express, TypeScript, authentication, and database optimization.",
+                    "React Native apps integrating geolocation, biometric authentication, push notifications, and backend service connections.",
             },
             {
-                title: "Production Deployments",
+                title: "Backend systems",
                 description:
-                    "Linux-based deployments with Nginx, PM2, and reliable server environments.",
+                    "REST APIs with Node.js, Express, TypeScript, authentication, data validation, and database optimization.",
+            },
+            {
+                title: "Production deployments",
+                description:
+                    "Linux server configuration, Nginx, PM2, environment variables, and reliable processes for production applications.",
             },
         ],
     },
 
     skills: {
         fileName: "skills.config.ts",
-        title: "Technical Skills",
+        title: "Technical skills",
         description:
             "Technologies I use to build web, mobile, backend, database, and deployment solutions.",
         groups: [
             {
                 title: "Frontend",
-                items: ["React", "React Native", "TypeScript", "Tailwind CSS", "Bootstrap", "jQuery"],
+                items: ["React", "React Native", "TypeScript", "Tailwind CSS", "Bootstrap"],
             },
             {
                 title: "Backend",
@@ -92,14 +98,14 @@ export const en = {
             },
             {
                 title: "DevOps & Tools",
-                items: ["Rocky Linux", "Nginx", "PM2", "Firebase", "Git", "Postman"],
+                items: ["Linux", "Nginx", "PM2", "Firebase", "Git", "Postman"],
             },
         ],
     },
 
     experience: {
         fileName: "experience.json",
-        title: "Professional Experience",
+        title: "Professional experience",
         description:
             "Experience building mobile applications, APIs, dashboards, databases, and internal administrative systems.",
         items: [
@@ -125,7 +131,7 @@ export const en = {
                 location: "Pachuca de Soto, Mexico",
                 highlights: [
                     "Internal systems for inventory, appraisals, and administrative fine control.",
-                    "UI refactoring with Bootstrap, jQuery, and PHP.",
+                    "Interface refactoring with Bootstrap, jQuery, and PHP.",
                     "SQL Server database administration.",
                     "Preventive and corrective system support.",
                 ],
@@ -138,7 +144,7 @@ export const en = {
                 location: "Mineral de la Reforma, Hidalgo",
                 highlights: [
                     "Academic survey system.",
-                    "Automation of manual data collection and analysis.",
+                    "Data collection automation.",
                     "PHP, SQL Server, Bootstrap, and jQuery.",
                 ],
                 stack: ["PHP", "SQL Server", "Bootstrap", "jQuery"],
@@ -147,39 +153,39 @@ export const en = {
     },
 
     projects: {
-        fileName: "proyectos.json",
-        title: "Proyectos",
+        fileName: "projects.json",
+        title: "Projects",
         description:
-            "Algunos proyectos fueron desarrollados para instituciones públicas o clientes privados, por lo que los repositorios no pueden compartirse. En su lugar, presento una descripción general, mi rol, responsabilidades y tecnologías utilizadas.",
+            "Some projects were developed for public institutions or private clients, so repositories cannot be shared. Instead, I present a general description, my role, responsibilities, and technologies used.",
 
         groups: [
             {
-                company: "Gobierno del Estado de Hidalgo",
-                period: "Mar 2024 — Actualidad",
-                location: "Pachuca de Soto, México",
+                company: "Government of the State of Hidalgo",
+                period: "Mar 2024 — Present",
+                location: "Pachuca de Soto, Mexico",
                 description:
-                    "Proyectos móviles, backend y administrativos desarrollados para mejorar servicios digitales, movilidad, reservaciones y operación institucional.",
+                    "Mobile, backend, and administrative projects developed to improve digital services, mobility, reservations, and institutional operations.",
                 projects: [
                     {
-                        title: "Aplicación móvil Tuzobús",
-                        category: "Gobierno / Movilidad",
-                        role: "Desarrollador Full-Stack",
+                        title: "Tuzobús Mobile App",
+                        category: "Government / Mobility",
+                        role: "Full-Stack Developer",
                         description:
-                            "Modernización y relanzamiento de la app móvil Tuzobús, incluyendo nuevo diseño institucional, corrección de funcionalidades, integración de APIs REST, base de datos y nuevas características móviles.",
+                            "Modernization and relaunch of the Tuzobús mobile app, including a new institutional design, feature fixes, REST API integration, database implementation, and new mobile capabilities.",
                         problemSolved:
-                            "La app llevaba años sin actualizarse, no contaba con base de datos propia, tenía funcionalidades obsoletas y había sido retirada de Google Play y App Store.",
+                            "The app had not been updated for years, did not have its own database, had outdated features, and had been removed from Google Play and the App Store.",
                         impact:
-                            "Se recuperó su disponibilidad en tiendas, se mejoró la experiencia móvil y se dio soporte a aproximadamente 77 mil usuarios registrados.",
+                            "The app was restored to app stores, the mobile experience was improved, and support was provided for approximately 77,000 registered users.",
                         responsibilities: [
-                            "Desarrollo de interfaces móviles con React Native.",
-                            "Rediseño visual alineado a la nueva imagen institucional.",
-                            "Desarrollo e integración de APIs REST.",
-                            "Diseño e implementación de base de datos.",
-                            "Corrección de funcionalidades existentes.",
-                            "Implementación de nuevas funcionalidades.",
-                            "Integración de mapas y servicios de geolocalización.",
-                            "Configuración de servicios Firebase para funcionalidades móviles.",
-                            "Soporte al proceso de publicación en Google Play y App Store.",
+                            "Built mobile interfaces with React Native.",
+                            "Implemented a new institutional visual design.",
+                            "Developed and integrated REST APIs.",
+                            "Designed and implemented the database.",
+                            "Fixed existing features.",
+                            "Implemented new features.",
+                            "Integrated maps and geolocation services.",
+                            "Configured Firebase services for mobile features.",
+                            "Supported the publishing process for Google Play and the App Store.",
                         ],
                         stack: [
                             "React Native",
@@ -188,7 +194,7 @@ export const en = {
                             "PostgreSQL",
                             "Firebase",
                             "Maps",
-                            "Geolocalización",
+                            "Geolocation",
                         ],
                         repositoryUrl: null,
                         demoUrl: null,
@@ -199,37 +205,37 @@ export const en = {
                             ios: "https://apps.apple.com/mx/app/tuzob%C3%BAs/id1473326651?l=en-GB",
                         },
                         confidentialityNote:
-                            "Repositorio no disponible por restricciones de propiedad y confidencialidad institucional.",
+                            "Repository not available due to institutional ownership and confidentiality restrictions.",
                     },
                     {
-                        title: "App Parque Cultural Hidalguense",
-                        category: "Gobierno / Reservaciones",
-                        role: "Desarrollador Full-Stack",
+                        title: "Parque Cultural Hidalguense App",
+                        category: "Government / Reservations",
+                        role: "Full-Stack Developer",
                         description:
-                            "Aplicación móvil para consultar disponibilidad, solicitar reservaciones, cancelar reservas y calificar servicios en los espacios del Parque Cultural Hidalguense.",
+                            "Mobile application for checking availability, requesting reservations, canceling bookings, and rating services for Parque Cultural Hidalguense spaces.",
                         problemSolved:
-                            "El parque contaba con un sistema web de reservaciones, pero no tenía una experiencia móvil dedicada para los usuarios.",
+                            "The park had a web-based reservation system, but it did not offer a dedicated mobile experience for users.",
                         impact:
-                            "Se mejoró el acceso móvil al sistema de reservaciones y la gestión de actividades como fútbol, ajedrez, go karts, basketball y pádel.",
+                            "Mobile access to the reservation system was improved, making it easier to manage activities such as soccer, chess, go-karts, basketball, and padel.",
                         responsibilities: [
-                            "Desarrollo de interfaces móviles con React Native.",
-                            "Integración con sistema web y servicios backend existentes.",
-                            "Implementación de autenticación biométrica.",
-                            "Desarrollo del flujo de solicitud de reservaciones.",
-                            "Consulta de disponibilidad de espacios y actividades.",
-                            "Implementación de cancelación de reservaciones.",
-                            "Implementación de calificación del servicio.",
-                            "Integración con APIs REST.",
-                            "Validación de flujos de usuario y mejora de experiencia móvil.",
+                            "Built mobile interfaces with React Native.",
+                            "Integrated the app with the existing web system and backend services.",
+                            "Implemented biometric authentication.",
+                            "Developed the reservation request flow.",
+                            "Implemented availability checks for spaces and activities.",
+                            "Implemented reservation cancellation.",
+                            "Implemented service rating functionality.",
+                            "Integrated REST APIs.",
+                            "Validated user flows and improved the mobile experience.",
                         ],
                         stack: [
                             "React Native",
                             "TypeScript",
-                            "APIs REST",
+                            "REST APIs",
                             "PostgreSQL",
-                            "Autenticación biométrica",
-                            "Reservaciones",
-                            "UX móvil",
+                            "Biometric Authentication",
+                            "Reservations",
+                            "Mobile UX",
                         ],
                         repositoryUrl: null,
                         demoUrl: null,
@@ -239,33 +245,72 @@ export const en = {
                             ios: null,
                         },
                         confidentialityNote:
-                            "Repositorio no disponible por restricciones de propiedad y confidencialidad institucional.",
+                            "Repository not available due to institutional ownership and confidentiality restrictions.",
+                    },
+                    {
+                        title: "Internal Systems Development",
+                        category: "Government / Internal Systems",
+                        role: "Full-Stack Developer",
+                        description:
+                            "Development and maintenance of internal systems to support administrative, operational, and institutional tracking processes within the Government of the State of Hidalgo.",
+                        problemSolved:
+                            "Several departments required internal digital tools to improve information control, reduce manual processes, and centralize administrative service operations.",
+                        impact:
+                            "Supported the digitalization of internal processes through private web systems and backend services, improving the organization, consultation, and tracking of institutional information.",
+                        responsibilities: [
+                            "Built administrative web interfaces.",
+                            "Developed and integrated REST APIs.",
+                            "Designed and maintained databases.",
+                            "Implemented internal modules for data entry, consultation, and information management.",
+                            "Optimized backend queries and processes.",
+                            "Deployed and managed services in Linux environments.",
+                            "Performed corrective and evolutionary maintenance for internal systems.",
+                            "Collaborated with internal departments to gather requirements and validate features.",
+                        ],
+                        stack: [
+                            "React",
+                            "TypeScript",
+                            "Node.js",
+                            "Express",
+                            "PostgreSQL",
+                            "SQL Server",
+                            "Linux",
+                            "Nginx",
+                            "PM2",
+                            "REST APIs",
+                        ],
+                        repositoryUrl: null,
+                        demoUrl: null,
+                        caseStudyUrl: null,
+                        storeUrls: null,
+                        confidentialityNote:
+                            "Private internal project. Source code, technical documentation, screenshots, and system access cannot be shared due to institutional confidentiality restrictions.",
                     },
                 ],
             },
             {
-                company: "Presidencia Municipal de Pachuca de Soto",
+                company: "Municipal Government of Pachuca de Soto",
                 period: "May 2023 — Mar 2024",
-                location: "Pachuca de Soto, México",
+                location: "Pachuca de Soto, Mexico",
                 description:
-                    "Sistemas internos enfocados en control administrativo, inventarios, avalúos, multas y soporte operativo.",
+                    "Internal systems focused on administrative control, inventory, appraisals, fines, and operational support.",
                 projects: [
                     {
-                        title: "Sistemas internos municipales",
-                        category: "Gobierno / Administración",
-                        role: "Desarrollador Web y Soporte de Sistemas",
+                        title: "Internal Municipal Systems",
+                        category: "Government / Administration",
+                        role: "Web Developer and Systems Support",
                         description:
-                            "Desarrollo y mantenimiento de sistemas internos para gestión de inventarios, avalúos y control administrativo de multas.",
+                            "Development and maintenance of internal systems for inventory management, appraisals, and administrative fine control.",
                         problemSolved:
-                            "Diversos procesos administrativos dependían de flujos manuales o sistemas con interfaces poco eficientes.",
+                            "Several administrative processes depended on manual workflows or systems with inefficient interfaces.",
                         impact:
-                            "Se mejoró la operación interna mediante sistemas web administrativos, mantenimiento de bases de datos y soporte a usuarios.",
+                            "Internal operations were improved through administrative web systems, database maintenance, and user support.",
                         responsibilities: [
-                            "Desarrollo y mantenimiento de sistemas internos.",
-                            "Refactorización de interfaces con Bootstrap, jQuery y PHP.",
-                            "Administración de bases de datos SQL Server.",
-                            "Mantenimiento preventivo y correctivo de sistemas.",
-                            "Soporte técnico a usuarios internos.",
+                            "Developed and maintained internal systems.",
+                            "Refactored interfaces with Bootstrap, jQuery, and PHP.",
+                            "Administered SQL Server databases.",
+                            "Performed preventive and corrective system maintenance.",
+                            "Provided technical support to internal users.",
                         ],
                         stack: ["PHP", "Bootstrap", "jQuery", "SQL Server"],
                         repositoryUrl: null,
@@ -273,32 +318,32 @@ export const en = {
                         caseStudyUrl: null,
                         storeUrls: null,
                         confidentialityNote:
-                            "Proyecto institucional interno. El código fuente y el acceso al sistema no pueden compartirse.",
+                            "Internal institutional project. Source code and system access cannot be shared.",
                     },
                 ],
             },
             {
-                company: "UAEH - Centro de Cómputo Académico",
-                period: "Jul 2022 — Dic 2022",
+                company: "UAEH - Academic Computing Center",
+                period: "Jul 2022 — Dec 2022",
                 location: "Mineral de la Reforma, Hidalgo",
                 description:
-                    "Proyecto académico enfocado en automatización de encuestas, captura de información y análisis de datos.",
+                    "Academic project focused on survey automation, data collection, and data analysis.",
                 projects: [
                     {
-                        title: "Sistema de encuestas académicas",
-                        category: "Educación / Sistema Web",
-                        role: "Desarrollador Full-Stack - Prácticas Profesionales",
+                        title: "Academic Survey System",
+                        category: "Education / Web System",
+                        role: "Full-Stack Developer Intern",
                         description:
-                            "Sistema web para recopilación, gestión y análisis de encuestas académicas, desarrollado para automatizar procesos previamente manuales.",
+                            "Web system for collecting, managing, and analyzing academic surveys, developed to automate previously manual processes.",
                         problemSolved:
-                            "La recopilación y análisis de encuestas académicas se realizaba de forma manual, generando tiempos largos y mayor probabilidad de errores.",
+                            "Academic survey collection and analysis were handled manually, causing long processing times and a higher risk of errors.",
                         impact:
-                            "Se automatizó la captura y análisis de información académica, mejorando la eficiencia del proceso.",
+                            "Data collection and academic information analysis were automated, improving process efficiency.",
                         responsibilities: [
-                            "Desarrollo de interfaces web con Bootstrap y jQuery.",
-                            "Desarrollo de lógica backend con PHP.",
-                            "Integración con base de datos SQL Server.",
-                            "Automatización de procesos de recopilación y análisis de datos.",
+                            "Built web interfaces with Bootstrap and jQuery.",
+                            "Developed backend logic with PHP.",
+                            "Integrated the system with a SQL Server database.",
+                            "Automated data collection and analysis processes.",
                         ],
                         stack: ["PHP", "SQL Server", "Bootstrap", "jQuery"],
                         repositoryUrl: null,
@@ -306,7 +351,7 @@ export const en = {
                         caseStudyUrl: null,
                         storeUrls: null,
                         confidentialityNote:
-                            "Proyecto académico/institucional. El código fuente no está disponible públicamente.",
+                            "Academic/institutional project. Source code is not publicly available.",
                     },
                 ],
             },
@@ -321,7 +366,7 @@ export const en = {
         items: [
             {
                 period: "December 2022",
-                institution: "Autonomous University of the State of Hidalgo",
+                institution: "Universidad Autónoma del Estado de Hidalgo",
                 degree: "Bachelor's Degree in Computer Science",
                 location: "Hidalgo, Mexico",
             },
@@ -333,7 +378,7 @@ export const en = {
             },
         ],
         note:
-            "Currently expanding knowledge in cybersecurity, secure systems, and risk management.",
+            "Currently expanding my knowledge in cybersecurity, secure systems, and risk management.",
     },
 
     contact: {
@@ -355,6 +400,6 @@ export const en = {
     terminal: {
         name: "portfolio",
         message: "Portfolio compiled successfully.",
-        status: "Available for opportunities and full-stack projects."
+        status: "Available for opportunities and full-stack projects.",
     },
 };
