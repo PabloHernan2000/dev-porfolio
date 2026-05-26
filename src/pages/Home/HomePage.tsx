@@ -80,7 +80,7 @@ export function HomePage() {
             {showCvOptions && (
               <div className="cv-dropdown-menu">
                 <a
-                  href="/documents/PabloHernanMunozGarcia_cv_2026_es.pdf"
+                  href="/dev-porfolio/documents/PabloHernanMunozGarcia_cv_2026_es.pdf"
                   download="PabloHernanMunozGarcia_cv_2026_es.pdf"
                   className="cv-dropdown-item"
                 >
@@ -88,7 +88,7 @@ export function HomePage() {
                 </a>
 
                 <a
-                  href="/documents/PabloHernanMunozGarcia_cv_2026_en.pdf"
+                  href="/dev-porfolio/documents/PabloHernanMunozGarcia_cv_2026_en.pdf"
                   download="PabloHernanMunozGarcia_cv_2026_en.pdf"
                   className="cv-dropdown-item"
                 >
